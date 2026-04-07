@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kontak Desa</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #10b981;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="Beranda.html">Profil Desa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Beranda.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="Tentang_Desa.html">Tentang Desa</a></li>
+        <li class="nav-item"><a class="nav-link" href="Layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="Galery.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Form.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link" href="Data_Warga.html">Data Warga</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER HALAMAN -->
+<header class="py-5 mb-5 shadow-sm" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-2" style="color: #10b981;">Hubungi Kami</h1>
+    <p class="text-muted fs-5">Kami siap mendengarkan masukan, saran, dan keluhan Anda untuk kemajuan bersama</p>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<div class="container py-5">
+  <div class="row g-4">
+    <!-- FORM KONTAK -->
+    <div class="col-lg-7">
+      <div class="card border-0 shadow-lg">
+        <div class="card-header text-white py-4" style="background-color: #10b981;">
+          <h5 class="mb-0 fw-bold"><i class="fas fa-envelope me-2"></i>Formulir Kontak</h5>
+        </div>
+        <div class="card-body p-4">
+          <form class="row g-3" id="contactForm" method="POST" action="#">
+            <div class="col-md-6">
+              <label for="nama" class="form-label fw-bold">Nama Lengkap <span style="color: #10b981;">*</span></label>
+              <input type="text" class="form-control form-control-lg" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+              <div class="invalid-feedback">Nama harus diisi.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label fw-bold">Email <span style="color: #10b981;">*</span></label>
+              <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Masukkan email Anda" required>
+              <div class="invalid-feedback">Email harus valid.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="telepon" class="form-label fw-bold">Nomor Telepon</label>
+              <input type="tel" class="form-control form-control-lg" id="telepon" name="telepon" placeholder="Masukkan nomor telepon">
+            </div>
+
+            <div class="col-md-6">
+              <label for="subjek" class="form-label fw-bold">Alamat <span style="color: #10b981;">*</span></label>
+              <input type="text" class="form-control form-control-lg" id="subjek" name="subjek" placeholder="Masukkan alamat Anda" required>
+              <div class="invalid-feedback">Alamat harus diisi.</div>
+            </div>
+
+            <div class="col-12">
+              <label for="pesan" class="form-label fw-bold">Pesan <span style="color: #10b981;">*</span></label>
+              <textarea class="form-control form-control-lg" id="pesan" name="pesan" rows="5" placeholder="Masukkan pesan Anda di sini..." required></textarea>
+              <div class="invalid-feedback">Pesan harus diisi.</div>
+            </div>
+
+            <div class="col-12 pt-2">
+              <button type="submit" class="btn btn-lg fw-bold me-2" style="background-color: #10b981; color: white; border: none;"><i class="fas fa-paper-plane me-2"></i>Kirim</button>
+              <button type="reset" class="btn btn-outline-secondary btn-lg fw-bold"><i class="fas fa-times me-2"></i>Bersihkan</button>
+            </div>
+
+            <div id="successMessage" class="alert alert-success alert-dismissible fade show" style="display:none;" role="alert">
+              <i class="fas fa-check-circle me-2"></i>Pesan Anda telah terkirim! Terima kasih telah menghubungi kami.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO KONTAK -->
+    <div class="col-lg-5">
+      <div class="card border-0 shadow-lg mb-4">
+        <div class="card-header text-white py-4" style="background-color: #10b981;">
+          <h5 class="mb-0 fw-bold"><i class="fas fa-phone me-2"></i>Informasi Kontak</h5>
+        </div>
+        <div class="card-body p-4">
+          <div class="mb-4">
+            <h6 class="fw-bold mb-2" style="color: #10b981;"><i class="fas fa-map-marker-alt me-2"></i>Alamat</h6>
+            <p>Desa Maju Mundur, Jl. Mawar No.1<br>Kecamatan Sejahtera, Provinsi Indonesia</p>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-bold mb-2" style="color: #10b981;"><i class="fas fa-phone me-2"></i>Telepon</h6>
+            <p><a href="tel:+62213456789" class="text-decoration-none">+62 (0)21 3456 789</a></p>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-bold mb-2" style="color: #10b981;"><i class="fas fa-envelope me-2"></i>Email</h6>
+            <p><a href="mailto:info@desajumundur.id" class="text-decoration-none">info@desajumundur.id</a></p>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-2" style="color: #10b981;"><i class="fas fa-clock me-2"></i>Jam Kerja</h6>
+            <p>Senin - Jumat: 08:00 - 17:00<br>Sabtu: 08:00 - 12:00<br>Minggu: Libur</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card border-0 shadow-lg">
+        <div class="card-header text-white py-4" style="background-color: #10b981;">
+          <h5 class="mb-0 fw-bold"><i class="fas fa-share-alt me-2"></i>Ikuti Kami</h5>
+        </div>
+        <div class="card-body p-4 text-center">
+          <a href="#" class="btn btn-sm me-2 mb-2" style="background-color: #10b981; color: white; border: none;"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="btn btn-sm me-2 mb-2" style="background-color: #10b981; color: white; border: none;"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#" class="btn btn-sm me-2 mb-2" style="background-color: #10b981; color: white; border: none;"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" class="btn btn-sm mb-2" style="background-color: #10b981; color: white; border: none;"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white mt-5" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+  <div class="container py-5">
+    <div class="row g-4 mb-4">
+      <!-- ABOUT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-info-circle me-2"></i>Tentang Kami</h5>
+        <p class="small">Desa Maju Mundur adalah desa modern yang berkomitmen memberikan pelayanan terbaik kepada seluruh masyarakat dengan prinsip transparansi dan profesionalisme.</p>
+      </div>
+
+      <!-- LAYANAN -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Layanan</h5>
+        <ul class="list-unstyled small">
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Kerangan</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Domisili</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Usaha</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Administrasi KTP</a></li>
+        </ul>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-link me-2"></i>Navigasi</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+          <li><a href="Tentang_Desa.html" class="text-white-50 text-decoration-none">Tentang Desa</a></li>
+          <li><a href="Galery.html" class="text-white-50 text-decoration-none">Galeri</a></li>
+          <li><a href="Data_Warga.html" class="text-white-50 text-decoration-none">Data Warga</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-headset me-2"></i>Hubungi Kami</h5>
+        <p class="small mb-2"><i class="fas fa-phone me-2"></i>+62 (0)21 3456 789</p>
+        <p class="small mb-2"><i class="fas fa-envelope me-2"></i>info@desajumundur.id</p>
+        <p class="small"><i class="fas fa-map-marker-alt me-2"></i>Desa Maju Mundur</p>
+      </div>
+    </div>
+
+    <hr class="bg-white-50">
+
+    <!-- FOOTER BOTTOM -->
+    <div class="row py-4">
+      <div class="col-md-6 text-center text-md-start small">
+        <p class="mb-0">&copy; 2026 Desa Maju Mundur. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end small">
+        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-warning"></i> untuk kemajuan desa.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Form validation
+  const contactForm = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    if (contactForm.checkValidity() === false) {
+      e.stopPropagation();
+    } else {
+      successMessage.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 5000);
+    }
+    
+    contactForm.classList.add('was-validated');
+  });
+</script>
+</body>
+</html>

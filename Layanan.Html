@@ -1,0 +1,240 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Layanan Desa</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #10b981;">
+  <div class="container">
+    <a class="navbar-brand" href="Layanan.Html">Profil Desa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link " href="Beranda.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link " href="Tentang_Desa.html">Tentang Desa</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link " href="Galery.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link " href="Form.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link " href="Data_Warga.html">Data Warga</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container py-5">
+  <h2 class="mb-4">Layanan Desa</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h4>Surat Kerangan</h4>
+        <p>Pelayanan pembuatan SKTM.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKTP">Isi Form</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h4>Surat Domisili</h4>
+        <p>Pengurusan surat keterangan domisili.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDomisili">Isi Form</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 text-center">
+        <h4>Surat Usaha</h4>
+        <p>Pembuatan surat keterangan usaha.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalUsaha">Isi Form</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modals for service forms -->
+
+<!-- KTP Modal -->
+<div class="modal fade" id="modalKTP" tabindex="-1" aria-labelledby="modalKTPLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalKTPLabel">Formulir Administrasi KTP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="service-form" data-service="Administrasi KTP">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">NIK</label>
+            <input type="text" name="nik" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Alamat</label>
+            <input type="text" name="address" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nomor Telepon</label>
+            <input type="tel" name="phone" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Keterangan</label>
+            <textarea name="note" class="form-control" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Domisili Modal -->
+<div class="modal fade" id="modalDomisili" tabindex="-1" aria-labelledby="modalDomisiliLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDomisiliLabel">Formulir Surat Domisili</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="service-form" data-service="Surat Domisili">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">NIK</label>
+            <input type="text" name="nik" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Alamat Saat Ini</label>
+            <input type="text" name="address" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Lama Tinggal (tahun)</label>
+            <input type="number" name="duration" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nomor Telepon</label>
+            <input type="tel" name="phone" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Usaha Modal -->
+<div class="modal fade" id="modalUsaha" tabindex="-1" aria-labelledby="modalUsahaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalUsahaLabel">Formulir Surat Usaha</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form class="service-form" data-service="Surat Usaha">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label class="form-label">Nama Pemilik</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nama Usaha</label>
+            <input type="text" name="business_name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Jenis Usaha</label>
+            <input type="text" name="business_type" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Alamat Usaha</label>
+            <input type="text" name="address" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nomor Telepon</label>
+            <input type="tel" name="phone" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white mt-5" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+  <div class="container py-5">
+    <div class="row g-4 mb-4">
+      <!-- ABOUT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-info-circle me-2"></i>Tentang Kami</h5>
+        <p class="small">Desa Maju Mundur adalah desa modern yang berkomitmen memberikan pelayanan terbaik kepada seluruh masyarakat dengan prinsip transparansi dan profesionalisme.</p>
+      </div>
+
+      <!-- LAYANAN -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Layanan</h5>
+        <ul class="list-unstyled small">
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Kerangan</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Domisili</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Usaha</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Administrasi KTP</a></li>
+        </ul>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-link me-2"></i>Navigasi</h5>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+          <li><a href="Tentang_Desa.html" class="text-white-50 text-decoration-none">Tentang Desa</a></li>
+          <li><a href="Galery.html" class="text-white-50 text-decoration-none">Galeri</a></li>
+          <li><a href="Data_Warga.html" class="text-white-50 text-decoration-none">Data Warga</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-headset me-2"></i>Hubungi Kami</h5>
+        <p class="small mb-2"><i class="fas fa-phone me-2"></i>+62 (0)21 3456 789</p>
+        <p class="small mb-2"><i class="fas fa-envelope me-2"></i>info@desajumundur.id</p>
+        <p class="small"><i class="fas fa-map-marker-alt me-2"></i>Desa Maju Mundur</p>
+      </div>
+    </div>
+
+    <hr class="bg-white-50">
+
+    <!-- FOOTER BOTTOM -->
+    <div class="row py-4">
+      <div class="col-md-6 text-center text-md-start small">
+        <p class="mb-0">&copy; 2026 Desa Maju Mundur. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end small">
+        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-warning"></i> untuk kemajuan desa.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
