@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Profil Desa - Beranda</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #10b981;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="Beranda.html">Profil Desa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="Beranda.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link " href="Tentang_Desa.html">Tentang Desa</a></li>
+        <li class="nav-item"><a class="nav-link " href="Layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link " href="Galery.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link " href="Form.html">Kontak</a></li>
+        <li class="nav-item"><a class="nav-link " href="Data_Warga.html">Data Warga</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="py-5 mb-4" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);">
+  <div class="container text-center">
+    <h1 class="fw-bold" style="color: #10b981;">Selamat Datang di Website Desa Maju Mundur</h1>
+
+    <!-- CAROUSEL / SLIDER -->
+    <div id="carouselDesa" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="Image/Desa 1.jpg" class="d-block w-100" alt="Desa 1" style="height: 100vh; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="Image/Desa 5.jpg" class="d-block w-100" alt="Desa 5" style="height: 100vh; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="Image/Desa 6.jpg" class="d-block w-100" alt="Desa 3" style="height: 100vh; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Kontrol prev/next -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesa" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDesa" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Berikutnya</span>
+      </button>
+
+      <!-- Indikator slider -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDesa" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDesa" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDesa" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+    <!-- AKHIR CAROUSEL -->
+  </div>
+</header>
+
+<!-- SEJARAH / VISI / MISI -->
+<div class="container mb-5">
+  <div class="row g-4">
+
+    <!-- SEJARAH -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title">Sejarah</h3>
+          <p class="card-text">
+            Desa Maju Mundur didirikan pada tahun 2025 oleh sekelompok masyarakat 
+            yang ingin membangun komunitas yang maju dan sejahtera.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISI -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title">Visi</h3>
+          <p class="card-text">
+            Mewujudkan desa yang maju, sejahtera, dan berdaya saing global pada tahun 2030.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISI -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h3 class="card-title">Misi</h3>
+          <p class="card-text">
+            Pelayanan profesional dan transparan.<br>
+            Meningkatkan pendidikan dan kesehatan.<br>
+            Mengembangkan potensi desa secara berkelanjutan.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- KEPALA DESA -->
+<div class="container py-5">
+  <h2 class="mb-4 text-center fw-bold">Kepala Desa</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <img src="Image/kepala desa.jpg" class="img-fluid rounded-circle mb-3 shadow" 
+           alt="Kepala Desa" style="width: 250px; height: 250px; object-fit: cover;">
+      <h4 class="fw-bold">Gabriel, S.Buah</h4>
+      <p class="text-muted">Kepala Desa Maju Mundur</p>
+    </div>
+  </div>
+</div>
+
+<!-- PERANGKAT DESA -->
+<div class="container py-5 bg-light rounded">
+  <h2 class="mb-5 text-center fw-bold">Perangkat Desa</h2>
+  <div class="row g-4">
+
+    <div class="col-md-4 text-center">
+      <img src="Image/Sekertaris.jpg" class="img-fluid rounded-circle mb-3 shadow"
+           alt="Sekretaris Desa" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="fw-bold">Fitriani S. Teler</h5>
+      <p class="text-muted">Sekretaris Desa</p>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="Image/Bendahar.jpg" class="img-fluid rounded-circle mb-3 shadow"
+           alt="Bendahara Desa" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="fw-bold">Amelia, S. Ton Tong</h5>
+      <p class="text-muted">Bendahara Desa</p>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="Image/Kepala bidang.jpg" class="img-fluid rounded-circle mb-3 shadow"
+           alt="Kepala Bidang" style="width: 200px; height: 200px; object-fit: cover;">
+      <h5 class="fw-bold">Naufal Fawwaz Aydin, S.Kelapa</h5>
+      <p class="text-muted">Kepala Bidang</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white mt-5" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+  <div class="container py-5">
+    <div class="row g-4 mb-4">
+      <!-- ABOUT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-info-circle me-2"></i>Tentang Kami</h5>
+        <p class="small">Desa Maju Mundur adalah desa modern yang berkomitmen memberikan pelayanan terbaik kepada seluruh masyarakat dengan prinsip transparansi dan profesionalisme.</p>
+      </div>
+
+      <!-- LAYANAN -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-cog me-2"></i>Layanan</h5>
+        <ul class="list-unstyled small">
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Kerangan</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Domisili</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Surat Usaha</a></li>
+          <li><a href="Layanan.html" class="text-white-50 text-decoration-none">Administrasi KTP</a></li>
+        </ul>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-link me-2"></i>Navigasi</h5>
+        <ul class="list-unstyled small">
+          <li><a href="Beranda.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+          <li><a href="Tentang_Desa.html" class="text-white-50 text-decoration-none">Tentang Desa</a></li>
+          <li><a href="Galery.html" class="text-white-50 text-decoration-none">Galeri</a></li>
+          <li><a href="Data_Warga.html" class="text-white-50 text-decoration-none">Data Warga</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3"><i class="fas fa-headset me-2"></i>Hubungi Kami</h5>
+        <p class="small mb-2"><i class="fas fa-phone me-2"></i>+62 (0)21 3456 789</p>
+        <p class="small mb-2"><i class="fas fa-envelope me-2"></i>info@desajumundur.id</p>
+        <p class="small"><i class="fas fa-map-marker-alt me-2"></i>Desa Maju Mundur</p>
+      </div>
+    </div>
+
+    <hr class="bg-white-50">
+
+    <!-- FOOTER BOTTOM -->
+    <div class="row py-4">
+      <div class="col-md-6 text-center text-md-start small">
+        <p class="mb-0">&copy; 2026 Desa Maju Mundur. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end small">
+        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-warning"></i> untuk kemajuan desa.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
